@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,500&family=Sacramento&family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+  </head>
+
+  <body onload="generateCaptcha();">
+    <h1>Contact Form With capcha</h1>
+    <h3>-Prasad Vavdane</h3>
+    <div class="outer">
+      <label for="username">Entre Your Full Name</label><br>
+      <input type="text" id="username" placeholder="Prasad Vavdane" />
+      <br>
+      <label for="email">Entre Email ID</label><br>
+      <input type="email" id="Email-id" placeholder="xxxx23@gmail.com" />
+      <br>
+      <label for="contact-number">Entre Contact Number</label><br>
+      <input type="text" id="Contact no" placeholder="xxxxxx9472" />
+      <br>
+      <label for="address-1">Entre 1st line address</label><br>
+      <input type="text" id="username" placeholder="Building,road,chawal etc"> 
+      <br>
+      <label for="address-2">Entre 2nd line address</label><br>
+      <input type="text" id="username" placeholder="Area,City etc">
+      <br>
+      <label for="state">Select State</label>
+      <select name="state" id="states" >
+        <option value="">States </option>
+        <option value="">Andhra Pradesh </option>
+        <option value="">Arunachal Pradesh</option>
+        <option value="">Andaman</option>
+        <option value="">Assam </option>
+        <option value="">Bihar </option>
+        <option value="">Chhattisgarh </option>
+        <option value="">Delhi</option>
+        <option value="">Goa </option>
+        <option value="">Gujarat </option>
+        <option value="">Haryana </option>
+        <option value="">Himachal Pradesh </option>
+        <option value="">Jharkhand </option>
+        <option value="">Jammu and Kashmir</option>
+        <option value="">Karnataka </option>
+        <option value="">Kerala </option>
+        <option value="">Madhya Pradesh</option>
+        <option value="">Maharashtra </option>
+        <option value="">Manipur </option>
+        <option value="">Meghalaya </option>
+        <option value="">Mizoram </option>
+        <option value="">Nagaland </option>
+        <option value="">Odisha </option>
+        <option value="">Punjab </option>
+        <option value="">Rajasthan </option>
+        <option value="">Sikkim </option>
+        <option value="">Tamil Nadu</option>
+        <option value="">Telangana </option>
+        <option value="">Tripura </option>
+        <option value="">Uttar Pradesh</option>
+        <option value="">Uttarakhand</option>
+        <option value="">West Bengal</option>
+        <option value="">Tripura </option>
+       </select>
+       
+       <input type="text" id="mainCaptcha" readonly="readonly"/>
+       <i class="fa-solid fa-arrows-rotate" id="refresh"onclick="generateCaptcha();"></i>
+       
+       <input type="text" id="txtinput"/>
+       
+       <input type="button" id="Button1" value="Check" onclick="CheckValidCaptcha();"/>
+       
+       <span id="error" style="color:red"></span>
+       
+       <span id="success" style="color:green"></span>
+
+    
+
+       <script src="./index.js"></script>
+    </div>
+  </body>
+</html> 

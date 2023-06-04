@@ -1,0 +1,68 @@
+
+
+*{
+    margin: 0;margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+ 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: aliceblue;
+    background: black;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+
+}
+.outer {
+  margin: 40px auto;
+  width: 28%;
+  border: 3px solid rgb(106, 88, 102);
+  border-radius: 20px;
+ 
+}
+input{
+    width: 70%;
+    height: 50px;
+    margin: 15px 50px;
+    padding: 20px;  
+}
+
+select{
+    margin: 15px 50px;
+    padding: 10px; 
+    display: block;
+}
+label{
+   margin-left: 150px;
+   margin-top: 10px;
+
+}
+
+#mainCaptcha{
+    width: 100px;
+    display: inline;
+}
+#refresh{
+    width: 50px;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 12px;
+    height: 50px;
+   font-size: larger;
+}
+span{
+    margin: 100px;
+    padding: 10px;
+}
+
+
+
